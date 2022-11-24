@@ -7,7 +7,7 @@ import plotly.graph_objects as go
 import streamlit as st
 
 df = pd.read_csv(
-    'scraping/Property_structured_data .csv'
+    '../scraping/Property_structured_data .csv'
 )
 
 df.drop('URL', axis=1, inplace=True)

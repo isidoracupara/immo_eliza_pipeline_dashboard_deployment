@@ -24,17 +24,17 @@ st.markdown('## Make prediction')
 
 #Import model-----------------------------------
 with open(
-        "model_training/model/immo_scaler.pkl",
+        "../model/immo_scaler.pkl",
         "rb") as scalefile:
     scaler = pickle.load(scalefile)
 
 with open(
-        "model_training/model/immo_poly_features.pkl",
+        "../model/immo_poly_features.pkl",
         "rb") as polyfeaturesfile:
     poly_features = pickle.load(polyfeaturesfile)
 
 with open(
-        "model/immo_model.pkl",
+        "../model/immo_model.pkl",
         "rb") as modelfile:
     poly_model = pickle.load(modelfile)
 
