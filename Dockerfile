@@ -2,13 +2,16 @@
 FROM python:3.10
 
 WORKDIR /app
+
 COPY /app .
 
+# Expose default streamlit port 8501
 EXPOSE 8501
 
 # Install pip requirements
 COPY requirements.txt requirements.txt
 RUN pip install -r requirements.txt
 
+ENTRYPOINT ["streamlit","run"]
 
-CMD [ "streamlit","run","home.py","--server.port=8501", "--server.address=0.0.0.0" ]
+CMD ["app.py"]
