@@ -1,5 +1,5 @@
 # For more information, please refer to https://aka.ms/vscode-docker-python
-FROM python:3.10-alpine
+FROM python:3.10-slim
 
 WORKDIR /app
 
@@ -10,7 +10,7 @@ EXPOSE 8501
 
 # Install pip requirements
 COPY requirements.txt requirements.txt
-RUN pip install -r requirements.txt
+RUN pip3 install -r requirements.txt
 
 ENTRYPOINT ["streamlit","run"]
 
