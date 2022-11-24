@@ -20,7 +20,7 @@ with open("map/BELGIUM_-_Municipalities.geojson") as geo_file:
 
 df_postal_codes = pd.read_csv("map/postal_code_data.csv",dtype={"municipality": str})
 
-df = pd.read_csv("Property_structured_data .csv", dtype={"Locality": str})
+df = pd.read_csv("scraping/Property_structured_data .csv", dtype={"Locality": str})
 
 
 df = df.merge(df_postal_codes,on='Postal_code')
