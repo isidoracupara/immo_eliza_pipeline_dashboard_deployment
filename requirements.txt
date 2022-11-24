@@ -87,7 +87,7 @@ marshmallow==3.18.0
 marshmallow-enum==1.5.1
 marshmallow-oneofschema==3.0.1
 marshmallow-sqlalchemy==0.26.1
-matplotlib==3.6.2
+matplotlib==3.5.3
 matplotlib-inline==0.1.6
 mdit-py-plugins==0.3.1
 mdurl==0.1.2
